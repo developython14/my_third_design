@@ -2,6 +2,7 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 :root {
     --color : hsl(227, 10%, 46%) ;
+    --top :-50px
 }
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;400&display=swap');
 
@@ -36,7 +37,7 @@ left: 35%;
 border-radius: 10px;
 box-shadow: paleturquoise;
 display: grid;
-grid-template-rows:calc(900px*.7*.6/4) ;
+grid-template-rows:calc(900px*.7*.6/4 - var(--top)) ;
 }
 .first-back {
     background-size: cover;
@@ -48,11 +49,18 @@ grid-template-rows:calc(900px*.7*.6/4) ;
 .profile-image {
     border-radius: 45px;
     border:solid 5px ;
-    border-color: chartreuse;
+    border-color:white;
+    position: relative;
+    top: var(--top);
 }
 .stat-zone {
     display: grid;
     grid-template-columns: repeat(3,30%);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    top: var(--top);
 }
 
 .age ,.location ,.object {
@@ -64,5 +72,21 @@ grid-template-rows:calc(900px*.7*.6/4) ;
     color: hsl(229, 23%, 23%);
 }
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 120px 20px;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.3;
+}
+hr {
+    width: 99%;
+    background: hsl(0, 12%, 95.1%);
+    color:hsl(0, 12%, 95.1%) ;
+    height: 1px;
+    position: relative;
+    top: var(--top);
+}
+.text-zone {
+    position: relative;
+    top: var(--top);
 }

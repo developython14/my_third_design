@@ -1,0 +1,68 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+:root {
+    --color : hsl(227, 10%, 46%) ;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;400&display=swap');
+
+.parent-container {
+background-color: hsl(0, 12%, 95.1%);
+width: 80%;
+height: 800px;
+margin-top: 5%;
+margin-left: 10%;
+margin-right: 10%;
+margin-bottom: 5%;
+text-align: center;
+font-family: 'Kumbh Sans', sans-serif;
+}
+
+.second-container{
+background-color: hsl(185, 75%, 39%);
+width : 90%;
+margin-left: 5%;
+margin-right: 5%;
+height: 70%;
+position: relative;
+top:15%;
+}
+.card {
+background-color: white;
+width: 30%;
+height: 60%;
+position: relative;
+top: 20%;
+left: 35%;
+border-radius: 10px;
+box-shadow: paleturquoise;
+display: grid;
+grid-template-rows:calc(900px*.7*.6/4) ;
+}
+.first-back {
+    background-size: cover;
+    background: url(/images/bg-pattern-card.svg);
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+}
+
+.profile-image {
+    border-radius: 45px;
+    border:solid 5px ;
+    border-color: chartreuse;
+}
+.stat-zone {
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+}
+
+.age ,.location ,.object {
+    color:var(--color);
+    font-weight:400;
+}
+.name ,.num {
+    font-weight: 800;
+    color: hsl(229, 23%, 23%);
+}
+.header {
+    display: flex;
+}

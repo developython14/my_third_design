@@ -8,7 +8,7 @@
 
 .parent-container {
 background-color: hsl(0, 12%, 95.1%);
-width: 80%;
+width: 1254px;
 height: 800px;
 margin-top: 5%;
 margin-left: 10%;
@@ -20,6 +20,9 @@ font-family: 'Kumbh Sans', sans-serif;
 
 .second-container{
 background-color: hsl(185, 75%, 39%);
+background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+background-position: right top, left bottom;
+background-repeat: no-repeat;
 width : 90%;
 margin-left: 5%;
 margin-right: 5%;
@@ -90,3 +93,33 @@ hr {
     position: relative;
     top: var(--top);
 }
+.toma{
+    background-color: yellow;
+    background-image: url(/images/bg-pattern-bottom.svg);
+    width: 800px;
+    height: 900px;
+}
+
+@media only screen and (max-width: 375px) {
+    .parent-container {
+        width : 375px;
+        height : 600px;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+
+    }
+    .card {
+        background-color: white;
+        width: 70%;
+        height: 80%;
+        position: relative;
+        top: 10%;
+        left: 15%;
+        border-radius: 10px;
+        box-shadow: paleturquoise;
+        display: grid;
+        grid-template-rows:calc(900px*.7*.6/4 - var(--top)) ;
+        }
+  }

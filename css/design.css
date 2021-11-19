@@ -102,7 +102,7 @@ hr {
 
 @media only screen and (max-width: 375px) {
     .parent-container {
-        width : 375px;
+        width : 250px;
         height : 600px;
         margin-top: 0%;
         margin-left: 0%;
